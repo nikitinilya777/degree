@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'accounts/', include('accounts.urls'))
+    path('jwt/', include('drf_jwt.urls'))
 ]
