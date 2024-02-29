@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django_rest_passwordreset',
     'corsheaders',
 
-    'drf_auth.apps.DrfAuthConfig',
+    'def_auth.apps.DefAuthConfig',
+    'messages_1.apps.MessagesConfig'
 ]
 
 MIDDLEWARE = [
@@ -203,13 +204,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.timeweb.ru'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'restore@darkdes-django-z38bs.tw1.ru'
-EMAIL_HOST_PASSWORD = '5NhMXoyniZwP'
-SERVER_EMAIL = 'restore@darkdes-django-z38bs.tw1.ru'
-# EMAIL_USE_TLS = False
-DEFAULT_FROM_EMAIL = 'Server <restore@darkdes-django-z38bs.tw1.ru>'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.timeweb.ru'
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = 'restore@darkdes-django-z38bs.tw1.ru'
+# EMAIL_HOST_PASSWORD = '5NhMXoyniZwP'
+# SERVER_EMAIL = 'restore@darkdes-django-z38bs.tw1.ru'
+# # EMAIL_USE_TLS = False
+# DEFAULT_FROM_EMAIL = 'Server <restore@darkdes-django-z38bs.tw1.ru>'
 
 
