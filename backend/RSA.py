@@ -92,21 +92,16 @@ def gen_key():
     global e
     global d
     global n
-    p = GetPrime(25)  # простое число 250 знаков
-    print(f"p = {p}")
-    q = GetPrime(25)  # простое число 250 знаков
-    print(f"q = {q}")
+    p = GetPrime(250)  # простое число 250 знаков
+    q = GetPrime(250)  # простое число 250 знаков
     n = p * q
-    print(f"\nМодуль\nn = {n}")
     φ = (p - 1) * (q - 1)
     while True:
         e = randint(2, φ - 1)
         if НОД(e, φ) == 1:
             break
-    print(f"\nОткрытый ключ\ne = {e}")
     _, d, _ = extended_euclid(e, φ)
     d %= φ
-    print(f"\nЗакрытый ключ\nd = {d}")
 
 
 
